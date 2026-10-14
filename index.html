@@ -103,12 +103,12 @@
   <script>
     // ⚙️ আপনার ফায়ারবেজ কনফিগারেশন এখানে বসাবেন
     const firebaseConfig = {
-      apiKey: "YOUR_API_KEY",
-      authDomain: "YOUR_AUTH_DOMAIN",
-      projectId: "YOUR_PROJECT_ID",
-      storageBucket: "YOUR_STORAGE_BUCKET",
-      messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-      appId: "YOUR_APP_ID"
+     apiKey: "AIzaSyCTgSqtcDRtvfbIECDFEv_2jAEgModArXc",
+  authDomain: "gk-exam-2.firebaseapp.com",
+  projectId: "gk-exam-2",
+  storageBucket: "gk-exam-2.firebasestorage.app",
+  messagingSenderId: "52008698353",
+  appId: "1:52008698353:web:08a24e1451711ab72f0450",
     };
 
     firebase.initializeApp(firebaseConfig);
@@ -239,7 +239,7 @@
       document.getElementById('correct-count').innerText = correctCount;
       document.getElementById('wrong-count').innerText = wrongCount;
 
-      db.collection("quiz_results").add({
+      db.collection("quiz_results 2").add({
         name: userName,
         score: totalScore.toFixed(2),
         correct: correctCount,
